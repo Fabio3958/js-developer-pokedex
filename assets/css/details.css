@@ -61,9 +61,89 @@
     filter: brightness(1.1)
 }
 
-
-
 .presentation img{
     margin: 1rem 0;
     height: 21vh;
+}
+
+.statistics{
+    display: flex;
+    flex-direction: column;
+}
+
+.statistics .data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 1rem 0; 
+}
+
+.statistics .stat{
+    padding-bottom: 1rem;
+    border-bottom: .03rem #bfbfbf solid;
+}
+
+.statistics .hp{
+    width: 50%;
+    height: 2px;
+    border-radius: 1rem;
+    background-color: green;
+}
+
+.statistics .attack{
+    width: 50%;
+    height: 2px;
+    border-radius: 1rem;
+    background-color: red;
+}
+
+
+.statistics .defense{
+    width: 50%;
+    height: 2px;
+    border-radius: 1rem;
+    background-color: blue;
+}
+
+
+.statistics .spAttack{
+    width: 50%;
+    height: 2px;
+    border-radius: 1rem;
+    background-color: orangered;
+}
+
+
+.statistics .spDefense{
+    width: 50%;
+    height: 2px;
+    border-radius: 1rem;
+    background-color: purple;
+}
+
+
+.statistics .speed{
+    width: 50%;
+    height: 2px;
+    border-radius: 1rem;
+    background-color: yellow;
+}
+
+@media screen and (min-width: 576px) {
+    .presentation .details .types{
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 766px) {
+    .presentation .details .types{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .presentation .details .types{
+        width: 15%;
+    }
 }
