@@ -18,7 +18,10 @@ function convertToHtml(pokemon) {
 }
 
 function loadPokemonPresentation() {
-    const url = `https://pokeapi.co/api/v2/pokemon/15/`;
+    const urlString = window.location.href;
+    const urlTratada = new URL(urlString);
+    const id = urlTratada.searchParams.get("id");
+    const url = `https://pokeapi.co/api/v2/pokemon/${id}/`;
 
     pokeApi.getPokemonByUrl(url)
         .then((details) => {
@@ -38,3 +41,4 @@ function loadPokemonPresentation() {
 }
 
 loadPokemonPresentation();
+

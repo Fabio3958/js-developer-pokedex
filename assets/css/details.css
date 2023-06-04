@@ -143,6 +143,7 @@
 .statistics{
     display: flex;
     flex-direction: column;
+    padding-left: 0;
 }
 
 .statistics .data{
